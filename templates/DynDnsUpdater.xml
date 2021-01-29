@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2021-01-29</Date>
+  <Beta>False</Beta>
+  <Category>Network:DNS</Category>
+  <Name>DynDNS Updater</Name>
+  <Project>https://account.dyn.com/images/oracle-dyn-logo.png</Project>
+  <Changes>
+[font size=3]2015.06.15[/font]
+- Initial Release
+  </Changes>
+  <Overview>
+Official DynDNS Updater
+  </Overview>
+  <Description>
+Official DynDNS Updater requires an account at https://account.dyn.com/
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/lhriley/dyndns-updater/</Registry>
+  <GitHub>https://github.com/lhriley/docker-dyndns-updater</GitHub>
+  <Repository>lhriley/dyndns-updater</Repository>
+  <Support>https://help.dyn.com/updater-linux/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridged</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dyndns-updater</HostDir>
+      <ContainerDir>/home/dyndns/.dynupdater</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>https://account.dyn.com/images/oracle-dyn-logo.png</Icon>
+</Containers>
